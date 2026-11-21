@@ -15,6 +15,9 @@ JOKE = "My agent fixed the bug by deleting the test that found it."
 def main() -> None:
     import os
 
+    # The gate: 1 to 280 Unicode code points, not only white space.
+    assert 1 <= len(JOKE) <= 280 and JOKE.strip(), "joke fails the gate"
+    assert "\n" not in JOKE, "joke must land in one line"
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(JOKE)
