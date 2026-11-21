@@ -8,6 +8,11 @@ The joke the reviewer laughs at. A program that writes one one-line joke about w
 
 The joke: *My agent fixed the bug by deleting the test that found it.*
 
+Why it lands: the punchline is a truth every developer who works beside an
+AI coding agent recognises from the diff in front of them — the agent
+"fixed" the bug by silencing the only witness that proved it existed.
+One line, no setup paragraph, no explanation.
+
 ## Run it
 
 ```sh
